@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crypto Wallet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="burger-menu__container">
+      <button class="header__burger-button burger-button_closed">
+        <picture>
+          <img src="images/Close.svg" alt="burger-menu" />
+        </picture>
+      </button>
+      <ul>
+        <li class="burger-menu__item">Home</li>
+        <li class="burger-menu__item">Blog</li>
+        <li class="burger-menu__item">FAQ</li>
+        <li class="burger-menu__item">Security</li>
+      </ul>
+    </div>
+    <section class="header">
+      <div class="header__burger-menu burger-menu">
+        <button class="header__burger-button burger-button_open">
+          <picture>
+            <img src="images/BurgerMenu.svg" alt="burger-menu" />
+          </picture>
+        </button>
+      </div>
+      <picture>
+        <img
+          class="header__logo"
+          src="images/CryptoWalletLogo.svg"
+          alt="logo"
+        />
+      </picture>
+      <ul class="header__menu-desktop">
+        <li class="header__item">Home</li>
+        <li class="header__item">Blog</li>
+        <li class="header__item">FAQ</li>
+      </ul>
+      <div class="header__buttons">
+        <button class="header__button">Log In</button>
+        <button class="header__button button_signup">Sign Up</button>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="banner__title-container">
+        <h2 class="banner__header">
+          All operations<br />
+          in a Single Wallet
+        </h2>
+        <p class="banner__description description-mobile">
+          The PayPay Wallet is a safe place for the trader’s portfolio: store
+          your crypto & fiat funds to track profits and other activities.
+        </p>
+        <p class="banner__description description-desktop">
+          The PayPay Wallet is a safe place for the trader’s portfolio: <br />
+          store your crypto & fiat funds to track profits and other activities.
+        </p>
+        <div class="banner__downloads">
+          <div class="banner__link">
+            <picture>
+              <source
+                media="(max-width: 1199px)"
+                srcset="images/MobileDownloadGooglePlay.svg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/DesktopDownloadGooglePlay.svg"
+              />
+              <img
+                class="banner__download-logo"
+                src="images/DesktopDownloadGooglePlay.svg"
+                alt="google play logo"
+              />
+            </picture>
+            <div class="banner__review">
+              <div class="banner__rating">
+                <span>4.6</span>
+                <picture>
+                  <img
+                    class="banner__rating-star"
+                    src="images/GoldStar.svg"
+                    alt="google rating star"
+                  />
+                </picture>
+              </div>
+              <p>78 reviews</p>
+            </div>
+          </div>
+          <div class="banner__link">
+            <picture>
+              <source
+                media="(max-width: 1199px)"
+                srcset="images/MobileDownloadAppStore.svg"
+              />
+              <source
+                media="(min-width: 1200px)"
+                srcset="images/DesktopDownloadAppStore.svg"
+              />
+              <img
+                class="banner__download-logo"
+                src="images/DesktopDownloadAppStore.svg"
+                alt="Download on the App Store"
+              />
+            </picture>
+            <div class="banner__review">
+              <div class="banner__rating">
+                <span>4.6</span>
+                <picture>
+                  <img
+                    class="banner__rating-star"
+                    src="images/GoldStar.svg"
+                    alt="app store rating star"
+                  />
+                </picture>
+              </div>
+              <p>80 reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__devices">
+        <picture>
+          <source
+            media="(max-width: 1199px)"
+            srcset="images/DeviceBannerMobile.png"
+          />
+          <source
+            media="(min-width: 1200px)"
+            srcset="images/DevicesBannerDesktop.png"
+          />
+          <img
+            class="banner__devices-image"
+            src="images/DevicesBannerDesktop.png"
+            alt="banner devices"
+          />
+        </picture>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <script src="scripts/onClickBurgerMenu.js"></script>
+  </footer>
+</html>
