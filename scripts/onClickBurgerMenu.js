@@ -4,14 +4,16 @@ const closedBurgerButton = document.querySelector(".burger-button_closed");
 const burgerMenuContainer = document.querySelector(".burger-menu__container");
 
 const checkIsOpenMenu = () => {
-  if (burgerMenuContainer.style.display === "none") {
-    burgerMenuContainer.style.display = "flex";
+  if (burgerMenuContainer.classList.contains("burger-menu_closed")) {
+    burgerMenuContainer.classList.remove("burger-menu_closed");
+    burgerMenuContainer.classList.add("burger-menu_open");
   } else {
-    burgerMenuContainer.style.display = "none";
+    burgerMenuContainer.classList.remove("burger-menu_open");
+    burgerMenuContainer.classList.add("burger-menu_closed");
   }
 };
 
-burgerMenuContainer.style.display = "none";
+burgerMenuContainer.classList.add("burger-menu_closed");
 
 openBurgerButton.addEventListener("click", checkIsOpenMenu);
 closedBurgerButton.addEventListener("click", checkIsOpenMenu);

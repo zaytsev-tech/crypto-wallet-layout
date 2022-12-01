@@ -6,54 +6,45 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/banner.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="styles/fonts.css" />
   </head>
   <body>
     <div class="burger-menu__container">
       <button class="header__burger-button burger-button_closed">
-        <picture>
-          <img src="images/Close.svg" alt="burger-menu" />
-        </picture>
+        <span class="close__icon"></span>
       </button>
-      <ul>
-        <li class="burger-menu__item">Home</li>
-        <li class="burger-menu__item">Blog</li>
-        <li class="burger-menu__item">FAQ</li>
-        <li class="burger-menu__item">Security</li>
-      </ul>
+      <nav>
+        <ul>
+          <li class="burger-menu__item"><a href="#home">Home</a></li>
+          <li class="burger-menu__item"><a href="#blog">Blog</a></li>
+          <li class="burger-menu__item"><a href="#faq">FAQ</a></li>
+          <li class="burger-menu__item"><a href="#security">Security</a></li>
+        </ul>
+      </nav>
     </div>
-    <section class="header">
+    <header>
       <div class="header__burger-menu burger-menu">
         <button class="header__burger-button burger-button_open">
-          <picture>
-            <img src="images/BurgerMenu.svg" alt="burger-menu" />
-          </picture>
+          <div class="burger__icon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </button>
       </div>
-      <picture>
-        <img
-          class="header__logo"
-          src="images/CryptoWalletLogo.svg"
-          alt="logo"
-        />
-      </picture>
-      <ul class="header__menu-desktop">
-        <li class="header__item">Home</li>
-        <li class="header__item">Blog</li>
-        <li class="header__item">FAQ</li>
-      </ul>
+      <img class="header__logo" src="images/CryptoWalletLogo.svg" alt="logo" />
+      <nav>
+        <ul class="header__menu-desktop">
+          <li class="header__item"><a href="#home">Home</a></li>
+          <li class="header__item"><a href="#blog">Blog</a></li>
+          <li class="header__item"><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
       <div class="header__buttons">
-        <button class="header__button">Log In</button>
+        <button class="header__button">Log in</button>
         <button class="header__button button_signup">Sign Up</button>
       </div>
-    </section>
+    </header>
     <section class="banner">
       <div class="banner__title-container">
         <h2 class="banner__header">
@@ -69,7 +60,7 @@
           store your crypto & fiat funds to track profits and other activities.
         </p>
         <div class="banner__downloads">
-          <div class="banner__link">
+          <div class="banner__download-item">
             <picture>
               <source
                 media="(max-width: 1199px)"
@@ -88,18 +79,16 @@
             <div class="banner__review">
               <div class="banner__rating">
                 <span>4.6</span>
-                <picture>
-                  <img
-                    class="banner__rating-star"
-                    src="images/GoldStar.svg"
-                    alt="google rating star"
-                  />
-                </picture>
+                <img
+                  class="banner__rating-star"
+                  src="images/GoldStar.svg"
+                  alt="google rating star"
+                />
               </div>
               <p>78 reviews</p>
             </div>
           </div>
-          <div class="banner__link">
+          <div class="banner__download-item">
             <picture>
               <source
                 media="(max-width: 1199px)"
@@ -118,13 +107,11 @@
             <div class="banner__review">
               <div class="banner__rating">
                 <span>4.6</span>
-                <picture>
-                  <img
-                    class="banner__rating-star"
-                    src="images/GoldStar.svg"
-                    alt="app store rating star"
-                  />
-                </picture>
+                <img
+                  class="banner__rating-star"
+                  src="images/GoldStar.svg"
+                  alt="app store rating star"
+                />
               </div>
               <p>80 reviews</p>
             </div>
