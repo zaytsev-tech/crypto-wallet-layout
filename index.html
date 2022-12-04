@@ -3,15 +3,17 @@
   <head>
     <title>Crypto Wallet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/general.css" />
-    <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/banner.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="blocks/general/general.css" />
+    <link rel="stylesheet" href="blocks/burger-menu/burger-menu.css" />
+    <link rel="stylesheet" href="blocks/header/header.css" />
+    <link rel="stylesheet" href="blocks/banner/banner.css" />
+    <link rel="stylesheet" href="blocks/fonts.css" />
+    <link rel="stylesheet" href="blocks/icons/icons.css" />
   </head>
   <body>
     <div class="burger-menu__container">
-      <button class="header__burger-button burger-button_closed">
-        <span class="close__icon"></span>
+      <button class="header__burger-button burger-button--closed">
+        <span class="close-icon"></span>
       </button>
       <nav>
         <ul>
@@ -23,9 +25,9 @@
       </nav>
     </div>
     <header>
-      <div class="header__burger-menu burger-menu">
-        <button class="header__burger-button burger-button_open">
-          <div class="burger__icon">
+      <div class="burger-menu">
+        <button class="header__burger-button burger-button--open">
+          <div class="burger-icon">
             <div></div>
             <div></div>
             <div></div>
@@ -122,15 +124,21 @@
         <picture>
           <source
             media="(max-width: 1199px)"
-            srcset="images/DeviceBannerMobile.png"
+            srcset="
+              images/DeviceBannerMobileMedium.png 375w,
+              images/DeviceBannerMobileLarge.png  500w
+            "
           />
           <source
             media="(min-width: 1200px)"
-            srcset="images/DevicesBannerDesktop.png"
+            srcset="
+              images/DevicesBannerDesktopMedium.png 1200w,
+              images/DevicesBannerDesktopLarge.png  1400w
+            "
           />
           <img
             class="banner__devices-image"
-            src="images/DevicesBannerDesktop.png"
+            src="images/DevicesBannerDesktopMedium.png"
             alt="banner devices"
           />
         </picture>
@@ -138,6 +146,6 @@
     </section>
   </body>
   <footer>
-    <script src="scripts/onClickBurgerMenu.js"></script>
+    <script src="blocks/burger-menu/burger-menu.js"></script>
   </footer>
 </html>

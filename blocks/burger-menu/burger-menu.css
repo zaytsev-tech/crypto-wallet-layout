@@ -1,0 +1,49 @@
+.burger-menu {
+  margin: 42% 0px 0px 27%;
+}
+
+.burger-menu__container {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #25253e;
+  display: none;
+  justify-content: center;
+}
+
+.burger-menu--open {
+  display: flex;
+}
+
+.burger-menu--closed {
+  display: none;
+}
+
+.burger-menu__container ul {
+  padding: 0;
+  margin-block-start: 62%;
+}
+
+.burger-menu__container li {
+  padding-bottom: 24px;
+}
+
+.burger-menu__item {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  color: #e6e6e6;
+  list-style: none;
+}
+
+@media (min-width: 1200px) {
+  .burger-menu {
+    display: none;
+  }
+}
