@@ -39,23 +39,6 @@ header {
   margin-top: 12%;
 }
 
-.header__burger-button {
-  background: transparent;
-  border: 0;
-  padding: 0;
-}
-
-.burger-button--open {
-  display: block;
-}
-
-.burger-button--closed {
-  display: block;
-  position: absolute;
-  top: 4%;
-  left: 7.3%;
-}
-
 @media (min-width: 720px) {
   header {
     height: 90px;

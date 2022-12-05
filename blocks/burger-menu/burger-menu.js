@@ -1,7 +1,7 @@
 const openBurgerButton = document.querySelector(".burger-button--open");
 const closedBurgerButton = document.querySelector(".burger-button--closed");
 
-const burgerMenuContainer = document.querySelector(".burger-menu__container");
+const burgerMenuContainer = document.querySelector(".burger-menu");
 
 const checkIsOpenMenu = () => {
   if (burgerMenuContainer.classList.contains("burger-menu--closed")) {

@@ -1,8 +1,4 @@
 .burger-menu {
-  margin: 42% 0px 0px 27%;
-}
-
-.burger-menu__container {
   position: fixed;
   z-index: 9;
   top: 0;
@@ -22,12 +18,12 @@
   display: none;
 }
 
-.burger-menu__container ul {
+.burger-menu ul {
   padding: 0;
   margin-block-start: 62%;
 }
 
-.burger-menu__container li {
+.burger-menu li {
   padding-bottom: 24px;
 }
 
@@ -42,7 +38,33 @@
   list-style: none;
 }
 
+.burger-button {
+  display: flex;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.burger-button--position--header {
+  margin: 23% 29% 0 29%;
+}
+
+.burger-button--open {
+  display: block;
+}
+
+.burger-button--closed {
+  display: block;
+  position: absolute;
+  top: 4%;
+  left: 7.3%;
+}
+
 @media (min-width: 1200px) {
+  .burger-button {
+    display: none;
+  }
+
   .burger-menu {
     display: none;
   }

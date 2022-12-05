@@ -28,4 +28,6 @@ h2,
 h3,
 p {
   margin: 0;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
 }

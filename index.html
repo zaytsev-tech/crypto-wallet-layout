@@ -9,31 +9,22 @@
     <link rel="stylesheet" href="blocks/banner/banner.css" />
     <link rel="stylesheet" href="blocks/fonts.css" />
     <link rel="stylesheet" href="blocks/icons/icons.css" />
+    <link
+      rel="stylesheet"
+      href="blocks/cryptocurrencies/cryptocurrencies.css"
+    />
   </head>
   <body>
-    <div class="burger-menu__container">
-      <button class="header__burger-button burger-button--closed">
-        <span class="close-icon"></span>
-      </button>
-      <nav>
-        <ul>
-          <li class="burger-menu__item"><a href="#home">Home</a></li>
-          <li class="burger-menu__item"><a href="#blog">Blog</a></li>
-          <li class="burger-menu__item"><a href="#faq">FAQ</a></li>
-          <li class="burger-menu__item"><a href="#security">Security</a></li>
-        </ul>
-      </nav>
-    </div>
     <header>
-      <div class="burger-menu">
-        <button class="header__burger-button burger-button--open">
-          <div class="burger-icon">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </button>
-      </div>
+      <button
+        class="burger-button burger-button--position--header burger-button--open"
+      >
+        <div class="burger-icon">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </button>
       <img class="header__logo" src="images/CryptoWalletLogo.svg" alt="logo" />
       <nav>
         <ul class="header__menu-desktop">
@@ -47,17 +38,26 @@
         <button class="header__button button_signup">Sign Up</button>
       </div>
     </header>
+    <section class="burger-menu">
+      <button class="burger-button burger-button--closed">
+        <span class="close-icon"></span>
+      </button>
+      <nav>
+        <ul>
+          <li class="burger-menu__item"><a href="#home">Home</a></li>
+          <li class="burger-menu__item"><a href="#blog">Blog</a></li>
+          <li class="burger-menu__item"><a href="#faq">FAQ</a></li>
+          <li class="burger-menu__item"><a href="#security">Security</a></li>
+        </ul>
+      </nav>
+    </section>
     <section class="banner">
       <div class="banner__title-container">
         <h2 class="banner__header">
           All operations<br />
           in a Single Wallet
         </h2>
-        <p class="banner__description description-mobile">
-          The PayPay Wallet is a safe place for the trader’s portfolio: store
-          your crypto & fiat funds to track profits and other activities.
-        </p>
-        <p class="banner__description description-desktop">
+        <p class="banner__description">
           The PayPay Wallet is a safe place for the trader’s portfolio: <br />
           store your crypto & fiat funds to track profits and other activities.
         </p>
@@ -142,6 +142,194 @@
             alt="banner devices"
           />
         </picture>
+      </div>
+    </section>
+    <section class="cryptocurrencies">
+      <h2 class="cryptocurrencies__header">Cryptocurrencies that we operate</h2>
+      <p class="cryptocurrencies__text cryptocurrencies__description">
+        Our team is increasing the number of cryptocurrency pairs
+        on-a-regular-basis. Discover cryptocurrencies that we currently support,
+        as well as which new cryptocurrencies will appear in our exchange module
+        and trading terminal in the near future.
+      </p>
+      <div class="cryptocurrencies__coin-types">
+        <ul class="cryptocurrencies__list">
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Bitcoin.svg"
+              alt="bitcoin"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              BTC
+            </p>
+            <p class="cryptocurrencies__text">Bitcoin</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Ethereum.svg"
+              alt="ethereum"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              ETH
+            </p>
+            <p class="cryptocurrencies__text">Ethereum</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Tether.svg" alt="tether" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              USDT
+            </p>
+            <p class="cryptocurrencies__text">Tether</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Stellar.svg"
+              alt="stellar"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              XLM
+            </p>
+            <p class="cryptocurrencies__text">Stellar</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/BitcoinCash.svg"
+              alt="bitcoin cash"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              BCH
+            </p>
+            <p class="cryptocurrencies__text">Bitcoin Cash</p>
+          </li>
+        </ul>
+        <ul class="cryptocurrencies__list">
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Fantom.svg" alt="fantom" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              FTM
+            </p>
+            <p class="cryptocurrencies__text">Fantom</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Compound.svg"
+              alt="compound"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              COMP
+            </p>
+            <p class="cryptocurrencies__text">Compound</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Status.svg" alt="status" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              SNT
+            </p>
+            <p class="cryptocurrencies__text">Status</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Bancor.svg" alt="bancor" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              BNT
+            </p>
+            <p class="cryptocurrencies__text">Bancor</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Solana.svg" alt="solana" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              SOL
+            </p>
+            <p class="cryptocurrencies__text">Solana</p>
+          </li>
+        </ul>
+        <ul class="cryptocurrencies__list">
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Augur.svg" alt="augur" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              REP
+            </p>
+            <p class="cryptocurrencies__text">Augur</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Litecoin.svg"
+              alt="litecoin"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              LTC
+            </p>
+            <p class="cryptocurrencies__text">Litecoin</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Tron.svg" alt="tron" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              TRX
+            </p>
+            <p class="cryptocurrencies__text">TRON</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Decentraland.svg"
+              alt="decentraland"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              MANA
+            </p>
+            <p class="cryptocurrencies__text">Decentraland</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Achain.svg" alt="achain" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              ACT
+            </p>
+            <p class="cryptocurrencies__text">Achain</p>
+          </li>
+        </ul>
+        <ul class="cryptocurrencies__list">
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Gincoin.svg"
+              alt="gincoin"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              GIN
+            </p>
+            <p class="cryptocurrencies__text">GINcoin</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Naga.svg" alt="naga" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              NGC
+            </p>
+            <p class="cryptocurrencies__text">NAGA</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img
+              class="coin-icon"
+              src="images/coins/Emercoin.svg"
+              alt="emercoin"
+            />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              EMC
+            </p>
+            <p class="cryptocurrencies__text">Emercoin</p>
+          </li>
+          <li class="cryptocurrencies__item">
+            <img class="coin-icon" src="images/coins/Ink.svg" alt="ink" />
+            <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
+              INK
+            </p>
+            <p class="cryptocurrencies__text">Ink</p>
+          </li>
+        </ul>
       </div>
     </section>
   </body>
