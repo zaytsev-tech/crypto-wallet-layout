@@ -1,0 +1,24 @@
+.primary-button {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  background: #d6d7f5;
+  border: none;
+  padding: 12.5px 100px;
+  border-radius: 4px;
+  color: #3139ce;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.primary-button:hover {
+  background: #a0a2dc;
+}
+
+.primary-button--hide {
+  display: none;
+}
