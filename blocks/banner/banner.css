@@ -9,6 +9,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: -4px;
 }
 
 .banner__devices-image {
@@ -144,6 +145,7 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    margin-bottom: 0px;
   }
 
   .banner__devices-image {
