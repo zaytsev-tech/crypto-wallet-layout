@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="blocks/banner/banner.css" />
     <link rel="stylesheet" href="blocks/fonts.css" />
     <link rel="stylesheet" href="blocks/icons/icons.css" />
+    <link rel="stylesheet" href="blocks/blog/blog.css" />
+    <link rel="stylesheet" href="blocks/typography/typography.css" />
     <link
       rel="stylesheet"
       href="blocks/cryptocurrencies/cryptocurrencies.css"
@@ -379,6 +381,43 @@
         <img class="cryptocurrencies__see-all-arrow-icon--closed" src="./images/ArrowDown.svg" alt="see all open arrow" />
         <img class="cryptocurrencies__see-all-arrow-icon--open" src="./images/ArrowUp.svg" alt="see all open arrow" />
       </button>
+    </section>
+    <section class="blog">
+      <h2 class="header-text">Blog</h2>
+      <div class="blog__article-list">
+      <div class="blog__article-container">
+        <div class="blog__image-wrapper">
+          <div class="blog__date-public">
+            <p>12 Oct 2021</p>
+          </div>
+        <picture>
+          <source
+            srcset="
+              images/blog/BlogImage1Small.png 375w,
+              images/blog/BlogImage1Medium.png  500w
+            "
+          />
+          <img
+            class="blog__article-image"
+            src="images/blog/BlogImage1Small.png"
+            alt="article image 1"
+          />
+        </picture>
+        <div class="blog__article-description">
+          <p class="blog__thumbnail-text">
+            How Asset Tokenization Can Help Business Entrepreneurs How Tokenization
+          </p>
+        </div>
+        </div>
+        <div class="blog__expert">
+          <img class="blog__avatar-expert" src="images/avatars/DanielFrost.png" alt="expert daniel frost" />
+          <div class="blog__expert-info">
+            <p class="blog__expert-name">Daniel Frost</p>
+            <p class="blog__expert-post">Сryptocurrency expert</p>
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
   </body>
   <footer>

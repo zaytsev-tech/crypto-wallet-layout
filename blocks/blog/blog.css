@@ -1,0 +1,92 @@
+.blog {
+  padding: 46px 24px 0px 24px;
+}
+
+.blog__article-list {
+  margin-top: 32px;
+}
+
+.blog__image-wrapper {
+  width: 293px;
+  height: 199px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.blog__article-image {
+  width: 100%;
+  height: 100%;
+}
+
+.blog__date-public {
+  position: absolute;
+  background: rgba(72, 72, 72, 0.28);
+  backdrop-filter: blur(2px);
+  border-radius: 4px;
+  padding: 8px 16px;
+  top: 20px;
+  right: 20px;
+}
+
+.blog__date-public p {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: rgba(250, 250, 250, 0.8);
+}
+
+.blog__article-description {
+  position: absolute;
+  bottom: 0;
+  padding: 12px;
+  background: rgba(72, 72, 72, 0.7);
+  backdrop-filter: blur(2px);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.blog__thumbnail-text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.blog__expert {
+  display: flex;
+  flex-direction: row;
+  column-gap: 14px;
+  margin-top: 16px;
+}
+
+.blog__avatar-expert {
+  width: 38px;
+}
+
+.blog__expert-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  justify-content: center;
+}
+
+.blog__expert-name {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+  color: #25253e;
+}
+
+.blog__expert-post {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #545762;
+}
