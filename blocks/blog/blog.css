@@ -1,9 +1,13 @@
 .blog {
   padding: 46px 24px 0px 24px;
+  position: relative;
+  overflow: hidden;
 }
 
 .blog__article-list {
   margin-top: 32px;
+  display: flex;
+  column-gap: 32px;
 }
 
 .blog__image-wrapper {
@@ -74,8 +78,6 @@
 }
 
 .blog__expert-name {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
@@ -83,10 +85,175 @@
 }
 
 .blog__expert-post {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 140%;
   color: #545762;
+}
+
+.blog__full-article {
+  display: flex;
+  flex-direction: row;
+  margin-top: 28px;
+  column-gap: 14px;
+}
+
+.blog__full-article p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: right;
+  color: #3139ce;
+}
+
+.blog__navigation_points {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  justify-content: center;
+}
+
+.blog__button-see-news {
+  display: flex;
+  margin: 27px auto 0px auto;
+  padding: 12.5px 76px;
+}
+
+.blog__article-container {
+  padding: 0;
+  border: none;
+}
+
+.blog__preview-article {
+  display: none;
+}
+
+.blog__all-news-button {
+  display: none;
+}
+
+.blog__expert-decorative-line {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .blog {
+    padding: 0px 80px 0px 80px;
+  }
+
+  .blog__article-list {
+    margin-top: 60px;
+    display: flex;
+    column-gap: 40px;
+  }
+
+  .blog__image-wrapper {
+    width: 400px;
+    height: 280px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .blog__expert {
+    margin-top: 15px;
+  }
+
+  .blog__avatar-expert {
+    width: 52px;
+  }
+
+  .blog__expert-name {
+    font-size: 20px;
+  }
+
+  .blog__expert-post {
+    font-size: 16px;
+  }
+
+  .blog__full-article {
+    display: none;
+  }
+
+  .blog__navigation_points {
+    display: none;
+  }
+
+  .blog__button-see-news {
+    display: none;
+  }
+
+  .blog__article-container {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .blog__article-info {
+    padding: 0px 90px;
+  }
+
+  .blog__article-header {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    color: #25253e;
+    margin-top: 20px;
+  }
+
+  .blog__preview-article {
+    display: flex;
+    margin-top: 60px;
+    flex-direction: row;
+  }
+
+  .blog__preview-image {
+    width: 649px;
+    height: 417px;
+  }
+
+  .blog__all-news-button {
+    display: block;
+    position: absolute;
+    padding: 10px 48px;
+    font-size: 18px;
+    top: 6px;
+    right: 80px;
+  }
+
+  .blog__date-create-article {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #9b9b9b;
+  }
+
+  .blog__preview-description {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    line-height: 138%;
+    color: #9b9b9b;
+    margin-top: 20px;
+  }
+
+  .blog__expert--preview {
+    margin-top: 42px;
+  }
+
+  .blog__expert-decorative-line {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .blog__thumbnail-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+  }
 }

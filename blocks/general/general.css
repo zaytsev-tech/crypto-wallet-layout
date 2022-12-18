@@ -31,3 +31,14 @@ p {
   font-family: "IBM Plex Sans";
   font-style: normal;
 }
+
+.ellipse {
+  background-color: #e6e6e6;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.ellipse--active {
+  background-color: #3139ce;
+}
