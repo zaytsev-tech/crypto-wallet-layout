@@ -143,7 +143,7 @@
   }
 
   .blog__article-list {
-    margin-top: 60px;
+    margin-top: 57px;
     display: flex;
     column-gap: 40px;
   }
@@ -156,7 +156,7 @@
   }
 
   .blog__expert {
-    margin-top: 15px;
+    margin-top: 18px;
   }
 
   .blog__avatar-expert {
@@ -237,7 +237,7 @@
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.15px;
-    line-height: 138%;
+    line-height: 140%;
     color: #9b9b9b;
     margin-top: 20px;
   }
@@ -255,5 +255,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
+  }
+
+  .blog__date-public p {
+    font-size: 16px;
   }
 }
