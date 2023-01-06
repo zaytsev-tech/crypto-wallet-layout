@@ -4,18 +4,18 @@
     <title>Crypto Wallet</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="blocks/general/general.css" />
-    <link rel="stylesheet" href="blocks/ui/burger-menu/burger-menu.css" />
-    <link rel="stylesheet" href="blocks/ui/primary-button/primary-button.css" />
-    <link rel="stylesheet" href="blocks/header/header.css" />
-    <link rel="stylesheet" href="blocks/banner/banner.css" />
-    <link rel="stylesheet" href="blocks/fonts.css" />
+    <link rel="stylesheet" href="blocks/ui/burger-menu.css" />
+    <link rel="stylesheet" href="blocks/ui/primary-button.css" />
+    <link rel="stylesheet" href="blocks/header.css" />
+    <link rel="stylesheet" href="blocks/banner.css" />
+    <link rel="stylesheet" href="blocks/fonts/fonts.css" />
     <link rel="stylesheet" href="blocks/icons/icons.css" />
-    <link rel="stylesheet" href="blocks/blog/blog.css" />
-    <link rel="stylesheet" href="blocks/addresses/addresses.css" />
+    <link rel="stylesheet" href="blocks/blog.css" />
+    <link rel="stylesheet" href="blocks/addresses.css" />
     <link rel="stylesheet" href="blocks/typography/typography.css" />
     <link
       rel="stylesheet"
-      href="blocks/cryptocurrencies/cryptocurrencies.css"
+      href="blocks/cryptocurrencies.css"
     />
   </head>
   <body>
@@ -29,7 +29,7 @@
           <div></div>
         </div>
       </button>
-      <img class="header__logo" src="images/CryptoWalletLogo.svg" alt="logo" />
+      <img class="header__logo" src="assets/images/svg/CryptoWalletLogo.svg" alt="logo" />
       <nav>
         <ul class="header__menu-desktop">
           <li class="header__item"><a href="#home">Home</a></li>
@@ -70,15 +70,15 @@
             <picture>
               <source
                 media="(max-width: 1199px)"
-                srcset="images/MobileDownloadGooglePlay.svg"
+                srcset="assets/images/svg/MobileDownloadGooglePlay.svg"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="images/DesktopDownloadGooglePlay.svg"
+                srcset="assets/images/svg/DesktopDownloadGooglePlay.svg"
               />
               <img
                 class="banner__download-logo"
-                src="images/DesktopDownloadGooglePlay.svg"
+                src="assets/images/svg/DesktopDownloadGooglePlay.svg"
                 alt="google play logo"
               />
             </picture>
@@ -87,7 +87,7 @@
                 <span>4.6</span>
                 <img
                   class="banner__rating-star"
-                  src="images/GoldStar.svg"
+                  src="assets/images/svg/GoldStar.svg"
                   alt="google rating star"
                 />
               </div>
@@ -98,15 +98,15 @@
             <picture>
               <source
                 media="(max-width: 1199px)"
-                srcset="images/MobileDownloadAppStore.svg"
+                srcset="assets/images/svg/MobileDownloadAppStore.svg"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="images/DesktopDownloadAppStore.svg"
+                srcset="assets/images/svg/DesktopDownloadAppStore.svg"
               />
               <img
                 class="banner__download-logo"
-                src="images/DesktopDownloadAppStore.svg"
+                src="assets/images/svg/DesktopDownloadAppStore.svg"
                 alt="Download on the App Store"
               />
             </picture>
@@ -115,7 +115,7 @@
                 <span>4.6</span>
                 <img
                   class="banner__rating-star"
-                  src="images/GoldStar.svg"
+                  src="assets/images/svg/GoldStar.svg"
                   alt="app store rating star"
                 />
               </div>
@@ -129,20 +129,20 @@
           <source
             media="(max-width: 1199px)"
             srcset="
-              images/DeviceBannerMobileMedium.png 375w,
-              images/DeviceBannerMobileLarge.png  500w
+              assets/images/DeviceBannerMobileX1.png 375w,
+              assets/images/DeviceBannerMobileX2.png  500w
             "
           />
           <source
             media="(min-width: 1200px)"
             srcset="
-              images/DevicesBannerDesktopMedium.png 1200w,
-              images/DevicesBannerDesktopLarge.png  1400w
+              assets/images/DevicesBannerDesktopX1.png 1200w,
+              assets/images/DevicesBannerDesktopX2.png  1400w
             "
           />
           <img
             class="banner__devices-image"
-            src="images/DevicesBannerDesktopMedium.png"
+            src="assets/images/DevicesBannerDesktopX1.png"
             alt="banner devices"
           />
         </picture>
@@ -161,7 +161,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Bitcoin.svg"
+              src="assets/images/svg/Bitcoin.svg"
               alt="bitcoin"
             />
             <div class="cryptocurrencies__info">
@@ -174,7 +174,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Ethereum.svg"
+              src="assets/images/svg/Ethereum.svg"
               alt="ethereum"
             />
             <div class="cryptocurrencies__info">
@@ -185,7 +185,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Tether.svg" alt="tether" />
+            <img class="coin-icon" src="assets/images/svg/Tether.svg" alt="tether" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               USDT
@@ -196,7 +196,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Stellar.svg"
+              src="assets/images/svg/Stellar.svg"
               alt="stellar"
             />
             <div class="cryptocurrencies__info">
@@ -209,7 +209,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/BitcoinCash.svg"
+              src="assets/images/svg/BitcoinCash.svg"
               alt="bitcoin cash"
             />
             <div class="cryptocurrencies__info">
@@ -222,7 +222,7 @@
         </ul>
         <ul class="cryptocurrencies__list">
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Fantom.svg" alt="fantom" />
+            <img class="coin-icon" src="assets/images/svg/Fantom.svg" alt="fantom" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               FTM
@@ -233,7 +233,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Compound.svg"
+              src="assets/images/svg/Compound.svg"
               alt="compound"
             />
             <div class="cryptocurrencies__info">
@@ -244,7 +244,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Status.svg" alt="status" />
+            <img class="coin-icon" src="assets/images/svg/Status.svg" alt="status" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               SNT
@@ -253,7 +253,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Bancor.svg" alt="bancor" />
+            <img class="coin-icon" src="assets/images/svg/Bancor.svg" alt="bancor" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               BNT
@@ -262,7 +262,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Solana.svg" alt="solana" />
+            <img class="coin-icon" src="assets/images/svg/Solana.svg" alt="solana" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               SOL
@@ -273,7 +273,7 @@
         </ul>
         <ul class="cryptocurrencies__list">
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Augur.svg" alt="augur" />
+            <img class="coin-icon" src="assets/images/svg/Augur.svg" alt="augur" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               REP
@@ -284,7 +284,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Litecoin.svg"
+              src="assets/images/svg/Litecoin.svg"
               alt="litecoin"
             />
             <div class="cryptocurrencies__info">
@@ -295,7 +295,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Tron.svg" alt="tron" />
+            <img class="coin-icon" src="assets/images/svg/Tron.svg" alt="tron" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               TRX
@@ -306,7 +306,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Decentraland.svg"
+              src="assets/images/svg/Decentraland.svg"
               alt="decentraland"
             />
             <div class="cryptocurrencies__info">
@@ -317,7 +317,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Achain.svg" alt="achain" />
+            <img class="coin-icon" src="assets/images/svg/Achain.svg" alt="achain" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               ACT
@@ -330,7 +330,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Gincoin.svg"
+              src="assets/images/svg/Gincoin.svg"
               alt="gincoin"
             />
             <div class="cryptocurrencies__info">
@@ -341,7 +341,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Naga.svg" alt="naga" />
+            <img class="coin-icon" src="assets/images/svg/Naga.svg" alt="naga" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               NGC
@@ -352,7 +352,7 @@
           <li class="cryptocurrencies__item">
             <img
               class="coin-icon"
-              src="images/coins/Emercoin.svg"
+              src="assets/images/svg/Emercoin.svg"
               alt="emercoin"
             />
             <div class="cryptocurrencies__info">
@@ -363,7 +363,7 @@
             </div>
           </li>
           <li class="cryptocurrencies__item">
-            <img class="coin-icon" src="images/coins/Ink.svg" alt="ink" />
+            <img class="coin-icon" src="assets/images/svg/Ink.svg" alt="ink" />
             <div class="cryptocurrencies__info">
             <p class="cryptocurrencies__text cryptocurrencies__text--coin-name">
               INK
@@ -379,8 +379,8 @@
         </ul>
       </div>
       <button class="primary-button cryptocurrencies__see-all-button">See all 
-        <img class="cryptocurrencies__see-all-arrow-icon--closed" src="./images/ArrowDown.svg" alt="see all open arrow" />
-        <img class="cryptocurrencies__see-all-arrow-icon--open" src="./images/ArrowUp.svg" alt="see all open arrow" />
+        <img class="cryptocurrencies__see-all-arrow-icon--closed" src="./assets/images/svg/ArrowDown.svg" alt="see all open arrow" />
+        <img class="cryptocurrencies__see-all-arrow-icon--open" src="./assets/images/svg/ArrowUp.svg" alt="see all open arrow" />
       </button>
     </section>
     <section class="blog">
@@ -390,13 +390,13 @@
         <picture>
           <source
           srcset="
-            images/blog/BlogImage1Small.png 768w,
-            images/blog/BlogImage1Medium.png  1200w
+            assets/images/BlogImage1X1.png 768w,
+            assets/images/BlogImage1X2.png  1200w
           "
         />
         <img
           class="blog__preview-image"
-          src="images/blog/BlogImage1Medium.png"
+          src="assets/images/BlogImage1X2.png"
           alt="desktop blog image"
         />
         </picture>
@@ -408,7 +408,7 @@
               In addition to a vast amount of terminology (cryptocurrency, blockchain, validation, etc.), hundreds of coins have appeared. But despite the significant figures for market cap, the actual impact on the economy has not yet been felt.
             </p>
             <div class="blog__expert blog__expert--preview">
-              <img class="blog__avatar-expert" src="images/avatars/DanielFrost.png" alt="expert daniel frost" />
+              <img class="blog__avatar-expert" src="assets/images/DanielFrost.png" alt="expert daniel frost" />
               <div class="blog__expert-info">
                 <p class="blog__expert-name">Daniel Frost</p>
                 <p class="blog__expert-post">Сryptocurrency expert</p>
@@ -426,13 +426,13 @@
         <picture>
           <source
             srcset="
-              images/blog/BlogImage1Small.png 375w,
-              images/blog/BlogImage1Medium.png  500w
+              assets/images/BlogImage1X1.png 375w,
+              assets/images/BlogImage1X2.png  500w
             "
           />
           <img
             class="blog__article-image"
-            src="images/blog/BlogImage1Small.png"
+            src="assets/images/BlogImage1X1.png"
             alt="article image 1"
           />
         </picture>
@@ -443,7 +443,7 @@
         </div>
         </div>
         <div class="blog__expert">
-          <img class="blog__avatar-expert" src="images/avatars/DanielFrost.png" alt="expert daniel frost" />
+          <img class="blog__avatar-expert" src="assets/images/DanielFrost.png" alt="expert daniel frost" />
           <div class="blog__expert-info">
             <p class="blog__expert-name">Daniel Frost</p>
             <p class="blog__expert-post">Сryptocurrency expert</p>
@@ -451,7 +451,7 @@
         </div>
           <a class="blog__full-article" href="#">
             <p>Read full article</p>
-            <img src="images/ArrowRight.svg" alt="arrow right" />
+            <img src="assets/images/svg/ArrowRight.svg" alt="arrow right" />
           </a>
       </div>
       <div class="blog__article-container">
@@ -462,13 +462,13 @@
         <picture>
           <source
             srcset="
-              images/blog/BlogImage2Small.png 375w,
-              images/blog/BlogImage2Medium.png  500w
+              assets/images/BlogImage2X1.png 375w,
+              assets/images/BlogImage2X2.png  500w
             "
           />
           <img
             class="blog__article-image"
-            src="images/blog/BlogImage2Small.png"
+            src="assets/images/BlogImage2X1.png"
             alt="article image 2"
           />
         </picture>
@@ -479,7 +479,7 @@
         </div>
         </div>
         <div class="blog__expert">
-          <img class="blog__avatar-expert" src="images/avatars/MarkThompson.png" alt="expert mark thompson" />
+          <img class="blog__avatar-expert" src="assets/images/MarkThompson.png" alt="expert mark thompson" />
           <div class="blog__expert-info">
             <p class="blog__expert-name">Mark Thompson</p>
             <p class="blog__expert-post">Entrepreneur</p>
@@ -487,7 +487,7 @@
         </div>
           <a class="blog__full-article" href="#">
             <p>Read full article</p>
-            <img src="images/ArrowRight.svg" alt="arrow right" />
+            <img src="assets/images/svg/ArrowRight.svg" alt="arrow right" />
           </a>
       </div>
       <div class="blog__article-container">
@@ -498,13 +498,13 @@
         <picture>
           <source
             srcset="
-              images/blog/BlogImage3Small.png 375w,
-              images/blog/BlogImage3Medium.png  500w
+              assets/images/BlogImage3X1.png 375w,
+              assets/images/BlogImage3X2.png  500w
             "
           />
           <img
             class="blog__article-image"
-            src="images/blog/BlogImage3Small.png"
+            src="assets/images/BlogImage3X1.png"
             alt="article image 3"
           />
         </picture>
@@ -515,7 +515,7 @@
         </div>
         </div>
         <div class="blog__expert">
-          <img class="blog__avatar-expert" src="images/avatars/DanielFrost.png" alt="expert daniel frost" />
+          <img class="blog__avatar-expert" src="assets/images/DanielFrost.png" alt="expert daniel frost" />
           <div class="blog__expert-info">
             <p class="blog__expert-name">Daniel Frost</p>
             <p class="blog__expert-post">Сryptocurrency expert</p>
@@ -523,7 +523,7 @@
         </div>
           <a class="blog__full-article" href="#">
             <p>Read full article</p>
-            <img src="images/ArrowRight.svg" alt="arrow right" />
+            <img src="assets/images/svg/ArrowRight.svg" alt="arrow right" />
           </a>
       </div>
     </div>
@@ -539,7 +539,7 @@
       <ul class="addresses__list">
         <li class="addresses__item addresses__item--active">
           <div class="addresses__city-name">
-            <img class="marker-icon" src="images/MapMarkerActive.svg" alt="map-marker" />
+            <img class="marker-icon" src="assets/images/svg/MapMarkerActive.svg" alt="map-marker" />
             <span>Tallin</span>
           </div>
           <div class="addresses__full-description">
@@ -548,7 +548,7 @@
         </li>
         <li class="addresses__item addresses__item--inactive">
           <div class="addresses__city-name">
-            <img class="marker-icon" src="images/MapMarkerInactive.svg" alt="map-marker" />
+            <img class="marker-icon" src="assets/images/svg/MapMarkerInactive.svg" alt="map-marker" />
             <span>Kiev</span>
           </div>
           <div class="addresses__full-description">
@@ -557,7 +557,7 @@
         </li>
         <li class="addresses__item addresses__item--inactive">
           <div class="addresses__city-name">
-            <img class="marker-icon" src="images/MapMarkerInactive.svg" alt="map-marker" />
+            <img class="marker-icon" src="assets/images/svg/MapMarkerInactive.svg" alt="map-marker" />
             <span>Dubai</span>
           </div>
           <div class="addresses__full-description">
@@ -568,7 +568,7 @@
     </section>
   </body>
   <footer>
-    <script src="blocks/ui/burger-menu/burger-menu.js"></script>
-    <script src="blocks/cryptocurrencies/cryptocurrencies.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/cryptocurrencies.js"></script>
   </footer>
 </html>
