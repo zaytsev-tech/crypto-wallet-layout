@@ -62,12 +62,12 @@
   margin: 46px auto 0px auto;
 }
 
-.cryptocurrencies__see-all-arrow-icon--closed {
-  display: flex;
+.see-all-button--open svg {
+  transform: rotate(0deg);
 }
 
-.cryptocurrencies__see-all-arrow-icon--open {
-  display: flex;
+.see-all-button--closed svg {
+  transform: rotate(180deg);
 }
 
 .cryptocurrencies__see-all-arrow-icon--hide {

@@ -7,9 +7,23 @@
   color: #25253e;
 }
 
+.blog-header-text {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #25253e;
+}
+
 @media (min-width: 1200px) {
   .header-text {
     font-size: 40px;
     line-height: 52px;
+  }
+
+  .blog-header-text {
+    font-size: 40px;
+    line-height: 100%;
   }
 }

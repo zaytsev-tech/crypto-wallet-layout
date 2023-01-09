@@ -24,22 +24,19 @@
   display: flex;
   flex-direction: column;
   color: #9b9b9b;
+  cursor: pointer;
 }
 
-.addresses__item--inactive div:first-child span {
+.addresses__item div:first-child span {
   color: #9b9b9b;
 }
 
-.addresses__item--active div:first-child span {
+.addresses__item:hover div:first-child span {
   color: #000;
 }
 
-.addresses__item--active div:first-child img {
-  color: #000;
-}
-
-.addresses__item--inactive {
-  color: #9b9b9b;
+.addresses__item:hover .marker-icon path {
+  fill: #3139ce;
 }
 
 .addresses__city-name {
@@ -56,4 +53,55 @@
 
 .addresses__full-description {
   margin-top: 8px;
+}
+
+.map-container {
+  margin-top: 18px;
+  position: absolute;
+  background-image: url("../assets/images/LocationX2.png");
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 369px;
+}
+
+@media (min-width: 1200px) {
+  .map-container {
+    margin-top: -33px;
+    position: relative;
+    background-image: url("../assets/images/LocationX2.png");
+    background-position: center;
+    background-size: cover;
+    width: 738px;
+    height: 369px;
+  }
+
+  .addresses {
+    margin: 188px 82px 0px 82px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addresses__city-name span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .addresses__full-description span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .addresses__list {
+    margin-top: 40px;
+  }
+
+  .addresses__list li {
+    margin-top: 20px;
+    padding: 0px;
+  }
 }
