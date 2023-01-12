@@ -9,8 +9,10 @@ const stateSeeAllOpen = document.querySelector(".see-all-button--open");
 const stateSeeAllClosed = document.querySelector(".see-all-button--closed");
 
 const currenciesListArray = document.querySelectorAll(
-  ".cryptocurrencies__list"
+  ".cryptocurrencies__lists ul"
 );
+
+console.log("currenciesListArray", currenciesListArray);
 
 if (window.innerWidth < 1024) {
   currenciesListArray[2].classList.add("cryptocurrencies--hide-list");

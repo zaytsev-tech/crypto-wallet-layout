@@ -1,5 +1,8 @@
 .addresses {
-  margin: 48px 24px 0px 24px;
+  width: 100%;
+  max-width: 328px;
+  margin: 0 auto;
+  margin-top: 47px;
 }
 
 .addresses__list {
@@ -68,6 +71,15 @@
 }
 
 @media (min-width: 1200px) {
+  .addresses {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1277px;
+    margin: 0 auto;
+    margin-top: 188px;
+  }
+
   .map-container {
     margin-top: -33px;
     position: relative;
@@ -76,12 +88,6 @@
     background-size: cover;
     width: 738px;
     height: 369px;
-  }
-
-  .addresses {
-    margin: 188px 82px 0px 82px;
-    display: flex;
-    justify-content: space-between;
   }
 
   .addresses__city-name span {

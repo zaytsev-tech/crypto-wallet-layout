@@ -1,5 +1,8 @@
 .cryptocurrencies {
-  padding: 71px 24px 0px 24px;
+  width: 100%;
+  max-width: 328px;
+  margin: 0 auto;
+  margin-top: 71px;
 }
 
 .coin-icon {
@@ -31,31 +34,14 @@
   line-height: 140%;
 }
 
-.cryptocurrencies__list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-}
-
-.cryptocurrencies__list li {
-  margin: 0;
-  margin-top: 25px;
-}
-
-.cryptocurrencies__list li:first-child {
-  margin-top: 0px;
-}
-
-.cryptocurrencies__coin-types {
+.cryptocurrencies__lists {
   display: grid;
   margin-top: 40px;
   grid-template-columns: 1.13fr 1fr;
 }
 
 .cryptocurrencies--hide-list {
-  display: none;
+  display: none !important;
 }
 
 .cryptocurrencies__see-all-button {
@@ -70,11 +56,28 @@
   transform: rotate(180deg);
 }
 
+.cryptocurrencies__lists ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.cryptocurrencies__lists ul > li {
+  margin: 0;
+  margin-top: 25px;
+}
+
+.cryptocurrencies__lists ul > li:first-child {
+  margin-top: 0px;
+}
+
 .cryptocurrencies__see-all-arrow-icon--hide {
   display: none;
 }
 
-.cryptocurrencies__coin-types ul:nth-child(3),
+.cryptocurrencies__lists ul:nth-child(3),
 ul:nth-child(4) {
   margin-top: 26px;
 }
@@ -108,7 +111,10 @@ ul:nth-child(4) {
 
 @media (min-width: 1200px) {
   .cryptocurrencies {
-    padding: 178px 65px 108px 65px;
+    width: 100%;
+    max-width: 1310px;
+    margin: 0 auto;
+    margin-top: 176px;
   }
 
   .coin-icon {
@@ -137,20 +143,12 @@ ul:nth-child(4) {
 
   .cryptocurrencies__description {
     padding: 0 15px;
+    font-size: 15.5px;
+    line-height: 22.5px;
   }
 
   .cryptocurrencies__description br {
     display: none;
-  }
-
-  .cryptocurrencies__list {
-    margin-top: 0px;
-    padding: 0;
-    row-gap: 16px;
-  }
-
-  .cryptocurrencies__list li {
-    margin-top: 0px;
   }
 
   .cryptocurrencies__item {
@@ -165,30 +163,40 @@ ul:nth-child(4) {
     border-radius: 12px;
   }
 
-  .cryptocurrencies__coin-types {
+  .cryptocurrencies__lists {
     display: flex;
     margin-top: 46px;
   }
 
-  .cryptocurrencies__coin-types ul:nth-child(1) li {
+  .cryptocurrencies__lists ul {
+    margin-top: 0px;
+    padding: 0;
+    row-gap: 16px;
+  }
+
+  .cryptocurrencies__lists ul > li {
+    margin-top: 0px;
+  }
+
+  .cryptocurrencies__lists ul:nth-child(1) li {
     padding-right: 142px;
   }
 
-  .cryptocurrencies__coin-types ul:nth-child(2) li {
+  .cryptocurrencies__lists ul:nth-child(2) li {
     padding-right: 141px;
   }
 
-  .cryptocurrencies__coin-types ul:nth-child(3) li,
+  .cryptocurrencies__lists ul:nth-child(3) li,
   ul:nth-child(4) li {
     padding-right: 120px;
   }
 
-  .cryptocurrencies__coin-types ul:nth-child(3),
+  .cryptocurrencies__lists ul:nth-child(3),
   ul:nth-child(4) {
     margin-top: 6px;
   }
 
-  .cryptocurrencies__coin-types ul:last-child li:last-child {
+  .cryptocurrencies__lists ul:last-child li:last-child {
     padding: 0;
     padding-left: 14px;
     padding-top: 12px;
@@ -196,7 +204,7 @@ ul:nth-child(4) {
 
   .cryptocurrencies__button-many-coins {
     font-size: 16px;
-    padding: 7px 17px;
+    padding: 9px 17px;
     border: none;
     background-color: transparent;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='8' ry='8' stroke='%239B9B9BFF' stroke-width='2' stroke-dasharray='8%2c 9' stroke-dashoffset='15' stroke-linecap='square'/%3e%3c/svg%3e");
