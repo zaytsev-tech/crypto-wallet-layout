@@ -12,8 +12,6 @@ const currenciesListArray = document.querySelectorAll(
   ".cryptocurrencies__lists ul"
 );
 
-console.log("currenciesListArray", currenciesListArray);
-
 if (window.innerWidth < 1024) {
   currenciesListArray[2].classList.add("cryptocurrencies--hide-list");
   currenciesListArray[3].classList.add("cryptocurrencies--hide-list");

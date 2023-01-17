@@ -1,8 +1,9 @@
 .addresses {
-  width: 100%;
-  max-width: 328px;
-  margin: 0 auto;
-  margin-top: 47px;
+  max-width: 375px;
+}
+
+.addresses__content {
+  margin: 47px 24px 0px 24px;
 }
 
 .addresses__list {
@@ -60,7 +61,6 @@
 
 .map-container {
   margin-top: 18px;
-  position: absolute;
   background-image: url("../assets/images/LocationX2.png");
   background-position: center;
   background-size: cover;

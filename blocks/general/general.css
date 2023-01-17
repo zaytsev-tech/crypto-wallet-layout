@@ -37,6 +37,10 @@ ul {
   margin: 0;
 }
 
+footer {
+  height: 200px;
+}
+
 .ellipse {
   background-color: #e6e6e6;
   height: 8px;
