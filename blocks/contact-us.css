@@ -14,11 +14,18 @@
   padding-right: 11px;
 }
 
+.contact-us__managers > div:last-child {
+  margin-top: 40px;
+}
+
 .manager__contact-info {
+  position: relative;
+  min-height: 374px;
 }
 
 .manager {
   position: relative;
+  z-index: 9;
 }
 
 .manager__avatar {
@@ -51,10 +58,52 @@
 .shadow-container {
   display: flex;
   min-width: 244px;
-  height: 100%;
+  min-height: 244px;
+  text-align: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0px 2px 7px rgba(56, 57, 77, 0.1);
+  box-shadow: -2.44156px 0px 7px rgba(56, 57, 77, 0.1);
   border-radius: 8px;
+}
+
+.manager_shadow-bottom > div:last-child {
+  position: absolute;
+  justify-content: end;
+  top: 130px;
+  left: 50px;
+}
+
+.manager_shadow-top > div:last-child {
+  position: absolute;
+  justify-content: start;
+  top: 0px;
+  left: 0px;
+}
+
+.manager_shadow-top > div:first-child {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+}
+
+.manager_shadow-bottom .shadow-container > div {
+  padding-bottom: 36px;
+}
+
+.manager_shadow-top .shadow-container > div {
+  padding-top: 36px;
+}
+
+.manager__name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  color: #25253e;
+}
+
+.manager__post {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #9b9b9b;
 }

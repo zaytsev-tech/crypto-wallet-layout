@@ -583,7 +583,7 @@
     <section class="contact-us">
       <h2 class="header-text">Contact us</h2>
       <div class="contact-us__managers">
-        <div class="manager__contact-info">
+        <div class="manager__contact-info manager_shadow-bottom">
           <div class="manager">
             <picture>
               <source 
@@ -610,10 +610,57 @@
             </div>
           </div>
           <div class="shadow-container">
+            <div>
             <p class="manager__name">Ralph Edwards</p>
             <p class="manager__post">Community manager</p>
           </div>
+          </div>
         </div>
+        <div class="manager__contact-info manager_shadow-top">
+          <div class="manager">
+            <picture>
+              <source 
+                srcset="assets/images/ArleneMcCoyX1.png 375w,
+                        assets/images/ArleneMcCoyX2.png 768w">
+              <img
+                class="manager__avatar"
+                src="assets/images/ArleneMcCoyX1.png"
+                alt="manager photo"
+              />
+            </picture>
+            <div class="communication-contacts">
+              <div>
+                <a href="https://web.telegram.org/z/">
+                  <img src="assets/images/svg/Telegram.svg" alt="telegram" />
+                </a>
+              </div>
+              <div class="communication-contacts__divider"></div>
+              <div>
+                <a href="https://mail.ru">
+                  <img src="assets/images/svg/Mail.svg" alt="mail" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-container">
+            <div>
+            <p class="manager__name">Arlene McCoy</p>
+            <p class="manager__post">Community manager</p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-us__form">
+        <form>
+          <label for="email">Email</label>
+          <input type="text" id="email">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone">
+          <label for="country">Country</label>
+          <select name="country" id="country">
+            <option>United  Kingdom</option>
+          </select>
+        </form>
       </div>
     </section>
   </body>
