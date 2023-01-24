@@ -107,3 +107,123 @@
   line-height: 140%;
   color: #9b9b9b;
 }
+
+.contact-us__form {
+  margin-top: 23px;
+}
+
+.contact-us__form form > div {
+  width: 100%;
+}
+
+.contact-us__form form > div {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.contact-us__form input[type="text"],
+.contact-us__form textarea,
+.contact-us__form select {
+  padding: 0 16px;
+  min-height: 44px;
+  background: #f7f7f7;
+  border: 1px solid #e1e1e4;
+  border-radius: 4px;
+}
+
+.contact-us__form textarea {
+  padding-top: 12px;
+}
+
+.contact-us__form input[type="text"]::placeholder,
+.contact-us__form textarea {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 127.5%;
+  color: #9b9b9b;
+}
+
+.email-input,
+.phone-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__form label {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #545462;
+}
+
+.email-input input,
+.phone-input input {
+  margin-top: 12px;
+}
+
+.country-select {
+  display: flex;
+  flex-direction: column;
+}
+
+.country-select select {
+  margin-top: 12px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../assets/images/svg/SelectArrowDown.svg");
+  background-position: 95%;
+  background-repeat: no-repeat;
+}
+
+.country-select select {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #1d1d1d;
+}
+
+.input-radio-genders {
+  display: flex;
+  flex-direction: row;
+}
+
+.message-textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-textarea textarea {
+  min-height: 98px;
+  margin-top: 12px;
+}
+
+.consent-checkbox {
+  display: flex;
+  align-items: start;
+}
+
+.consent-checkbox label {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #797979;
+}
+
+.form-description {
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #9b9b9b;
+}

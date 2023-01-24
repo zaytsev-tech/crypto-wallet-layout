@@ -650,16 +650,46 @@
           </div>
         </div>
       </div>
+      <p class="form-description">Use this form to reach out to us</p>
       <div class="contact-us__form">
         <form>
-          <label for="email">Email</label>
-          <input type="text" id="email">
-          <label for="phone">Phone</label>
-          <input type="text" id="phone">
-          <label for="country">Country</label>
-          <select name="country" id="country">
-            <option>United  Kingdom</option>
-          </select>
+          <div class="email-input">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="nick@example.com">
+          </div>
+          <div class="phone-input">
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" placeholder="+44 (000) 000-0000">
+          </div>
+          <div class="country-select">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+              <option>
+                <img src="assets/images/svg/UKFlagEllipse.svg" alt="location flag" />
+                United  Kingdom
+              </option>
+            </select>
+          </div>
+          <div class="input-radio-genders">
+            <div>
+              <input type="radio" id="gender_man" name="genders" value="man">
+              <label for="gender_man">Man</label>
+            </div>
+            <div>
+              <input type="radio" id="gender_woman" name="genders" value="woman">
+              <label for="gender_woman">Woman</label>
+            </div>
+          </div>
+          <div class="message-textarea">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Enter your message here">Enter your message here</textarea>
+          </div>
+          <div class="consent-checkbox">
+            <input type="checkbox" id="consent" name="consent">
+            <label for="consent">By clicking on the button, you consent
+              to the processing<a href="/"> of data processing.</a>
+              and compiled <a href="/">with confidentiality documents</a></label>
+            </div>
         </form>
       </div>
     </section>
