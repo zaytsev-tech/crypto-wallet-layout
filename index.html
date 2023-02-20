@@ -650,8 +650,10 @@
           </div>
         </div>
       </div>
-      <p class="form-description">Use this form to reach out to us</p>
-      <div class="contact-us__form">
+      <div class="contact-us-form__container">
+        <p class="form-description">Use this form to reach out to us</p>
+        <div class="contact-us__form">
+          <h2 class="header-text">Contact us</h2>
         <form>
           <div class="email-input">
             <label for="email">Email</label>
@@ -672,12 +674,12 @@
           </div>
           <div class="input-radio-genders">
             <div>
-              <input type="radio" id="gender_man" name="genders" value="man">
-              <label for="gender_man">Man</label>
+              <input class="gender-radio-input" type="radio" id="gender_man" name="genders">
+              <label for="gender_man" class="label-gender"><span class="form-gender-radio"></span> Man</label>
             </div>
             <div>
-              <input type="radio" id="gender_woman" name="genders" value="woman">
-              <label for="gender_woman">Woman</label>
+              <input class="gender-radio-input" type="radio" id="gender_woman" name="genders">
+              <label for="gender_woman" class="label-gender"><span class="form-gender-radio"></span> Woman</label>
             </div>
           </div>
           <div class="message-textarea">
@@ -685,13 +687,15 @@
             <textarea id="message" name="message" placeholder="Enter your message here">Enter your message here</textarea>
           </div>
           <div class="consent-checkbox">
-            <input type="checkbox" id="consent" name="consent">
-            <label for="consent">By clicking on the button, you consent
+            <input class="consent-checkbox__input" type="checkbox" id="consent" name="consent">
+            <label class="consent-checkbox__label" for="consent"><div>By clicking on the button, you consent
               to the processing<a href="/"> of data processing.</a>
-              and compiled <a href="/">with confidentiality documents</a></label>
+              and compiled <a href="/">with confidentiality documents</a></div></label>
             </div>
+            <button class="primary-button contact-us__button-submit" type="submit">See all news</button>
         </form>
       </div>
+    </div>
     </section>
   </body>
   <footer>
