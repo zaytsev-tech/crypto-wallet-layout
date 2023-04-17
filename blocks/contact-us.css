@@ -29,7 +29,7 @@
 }
 
 .manager__avatar {
-  min-width: 244px;
+  max-width: 244px;
   height: 100%;
 }
 
@@ -332,7 +332,18 @@
 }
 
 .contact-us__button-submit {
-  margin-top: 24px;
+  margin: 24px auto 0px;
+  max-width: 244px;
+  padding: 12px 68px;
+}
+
+.form-description--desktop {
+  display: none;
+  text-align: start;
+}
+
+.form-description--mobile {
+  display: block;
 }
 
 @media (max-width: 767px) {
@@ -344,14 +355,56 @@
 @media (min-width: 768px) {
   .contact-us {
     max-width: 100%;
-    flex-direction: row;
+    padding: 0 80px;
+    margin-top: 133px;
+    display: grid;
+    grid-auto-flow: column;
   }
 
   .contact-us > .header-text {
     display: none;
   }
 
+  .form-description--desktop {
+    display: block;
+  }
+
+  .form-description--mobile {
+    display: none;
+  }
+
+  .contact-us__form {
+    max-width: 480px;
+  }
+
   .contact-us__managers {
-    max-width: 50%;
+    max-width: 100%;
+    display: flex;
+    margin-top: 93px;
+    padding: 0;
+  }
+
+  .contact-us__managers > div:first-child {
+    margin-right: 60px;
+  }
+
+  .contact-us__managers > div:last-child {
+    margin-top: 0px;
+  }
+
+  .manager__avatar {
+    max-width: 216px;
+    height: auto;
+  }
+
+  .shadow-container {
+    min-width: 216px;
+    min-height: 216px;
+  }
+
+  .manager__contact-info {
+    position: relative;
+    width: 280px;
+    height: 320px;
   }
 }
