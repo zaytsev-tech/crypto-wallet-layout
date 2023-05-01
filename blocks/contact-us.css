@@ -29,6 +29,7 @@
 }
 
 .manager__avatar {
+  width: 100%;
   max-width: 244px;
   height: 100%;
 }
@@ -77,6 +78,7 @@
 }
 
 .manager_shadow-top > div:first-child {
+  width: 244px;
   position: absolute;
   top: 130px;
   right: 0;
@@ -365,8 +367,14 @@
     display: none;
   }
 
+  .contact-us__form > .header-text {
+    line-height: 65px;
+  }
+
   .form-description--desktop {
     display: block;
+    margin-top: 14px;
+    font-size: 16px;
   }
 
   .form-description--mobile {
@@ -375,10 +383,12 @@
 
   .contact-us__form {
     max-width: 480px;
+    padding: 0px;
+    padding-left: 5px;
   }
 
   .contact-us__managers {
-    max-width: 100%;
+    min-width: 670px;
     display: flex;
     margin-top: 93px;
     padding: 0;
@@ -406,5 +416,90 @@
     position: relative;
     width: 280px;
     height: 320px;
+  }
+
+  .manager_shadow-top > div:first-child {
+    width: 216px;
+    top: 106px;
+    right: -13px;
+  }
+
+  .manager_shadow-bottom > div:last-child {
+    top: 120px;
+    left: 55px;
+  }
+
+  .manager__post {
+    margin-top: 7px;
+  }
+
+  .manager_shadow-bottom .shadow-container > div {
+    padding-bottom: 47px;
+    text-align: initial;
+    margin: 0 auto;
+  }
+
+  .manager_shadow-top .shadow-container > div {
+    padding-top: 33px;
+    text-align: initial;
+    margin: 0 auto;
+  }
+
+  .email-input,
+  .phone-input {
+    margin-top: 20px;
+  }
+
+  .contact-us__input-wrapper {
+    display: flex;
+    margin-top: 20px;
+    align-items: end;
+    justify-content: space-between;
+  }
+
+  .country-select {
+    margin-top: 0px;
+    min-width: 235px;
+  }
+
+  .input-radio-genders {
+    margin-top: 0px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .communication-contacts div {
+    display: flex;
+    line-height: 0;
+  }
+
+  .communication-contacts div:first-child {
+    padding: 9px 7px 9px 17px;
+  }
+
+  .communication-contacts div:last-child {
+    padding: 9px 17px 9px 7px;
+  }
+
+  .communication-contacts img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .message-textarea {
+    margin-top: 24px;
+  }
+
+  .contact-us__button-submit {
+    margin: 24px 0px;
+    padding: 9px 41px;
+
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
   }
 }
