@@ -13,10 +13,14 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.display === "block") {
       panel.style.display = "none";
 
+      this.parentNode.style.backgroundColor = "#fff";
+
       minusIcon.style.display = "none";
       plusIcon.style.display = "block";
     } else {
       panel.style.display = "block";
+
+      this.parentNode.style.backgroundColor = "#fafafa";
 
       minusIcon.style.display = "block";
       plusIcon.style.display = "none";
