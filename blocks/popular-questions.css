@@ -54,16 +54,18 @@
   display: none;
   margin-top: 34px;
   padding: 0px 8px;
+  color: #9b9b9b;
 
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px !important;
-  line-height: 22px !important;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .accordion-icon {
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .minus-icon {
