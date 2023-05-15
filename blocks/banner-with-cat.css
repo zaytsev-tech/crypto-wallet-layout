@@ -1,5 +1,5 @@
 .banner-with-cat {
-  margin-top: 60px;
+  margin-top: 55px;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -8,8 +8,10 @@
 .banner-with-cat__container {
   width: 100%;
   padding: 24px;
-  border-radius: 8px;
   background-color: #1e1e46;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner-with-cat__header {
@@ -33,21 +35,38 @@
   color: #e6e6e6;
 }
 
-.banner-with-cat__button {
-  margin: 157px auto 0;
+.banner-with-cat__title-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.cat-image {
+.banner-with-cat__button {
+  margin: 7px auto 0;
+}
+
+.banner-with-cat__image-container {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.cat-image-mobile {
   position: absolute;
-  display: block;
-  width: 443px;
-  top: 120px;
-  left: 15px;
+  width: 360px;
+  top: -58px;
+  left: -8px;
 }
 
 @media (min-width: 768px) {
   .banner-with-cat {
     margin-top: 126px;
     padding: 0 80px;
+  }
+
+  .banner-with-cat__container {
+    border-radius: 8px;
   }
 }
